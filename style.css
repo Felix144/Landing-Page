@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+
+}
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #ba423e;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a{
+    display: block;
+    padding: 23px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: #be6d6a;
+}
+
+.logo{
+    position: relative;
+    width: 150%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.logo a {
+    width: auto;
+    height: auto;
+    max-height: 300px;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 100vh !important;
+    background: url(imgs/Arte1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    padding: 100px 100px;
+}
+
+.logito:hover{
+    transform: rotate(3deg);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #ba423e;
+    text-decoration: none;
+    background: #ba423e;
+    color: white;
+}
+
+.btn:hover{
+    background: #be6d6a;
+    border:2px solid #be6d6a;
+}
+
+.btn-home {
+    display: flex;
+}
+.btn-home a{
+    margin:0 10px;
+}
+
+p{
+    margin-bottom: 40px;
+    font-size: 18px;  
+    padding : 0 100px;
+}
+
+.content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec {
+    padding: 30px;
+    background: #e2c063;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box{
+    height: 11rem;
+    width: 17rem;
+    background: rgba(255, 0, 0, 0.795);
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0 ,0,0,.5);
+    margin: 2rem;
+}
+
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background: #771515;
+    margin: 1rem 0;
+}
+
+.box-container .box h3{
+    font-size: 20px;
+    color: #771515;
+}
+
+.box-container .box p{
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about{
+    padding: 30px;
+    background: rgb(255, 60, 60);
+}
+
+div.galeria{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.galeria img{
+   width: auto;
+   height: auto;
+   max-height: 250px;
+   max-width: 250px;
+   padding: 20px;
+}
+
+.galeria:hover{
+    transform: rotate(-3deg);
+}
+
+
+
+@media (max-width: 768px) {
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sec{
+        height: 120vh;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .cerrar{
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 20px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
